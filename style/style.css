@@ -9,6 +9,8 @@ h1, #footer {
 	text-align: center;
 }
 
+h2 {margin-left: 10px;border-bottom: 1px solid #7A9FBF;}
+
 a:hover {
 	color: #7A9FBF;
 }
@@ -20,13 +22,28 @@ a:hover {
 	overflow: auto;
 }
 
+#main {margin: 10px 5px 10px 15px;}
+#right {margin: 10px 15px 10px 5px;}
+
 #main, #right {
 	background-color: #fff;
 	outline: 1px #A8BF54 solid;	
 }
 
 .inner {
+	clear: both;
 	padding: 10px;
+}
+
+.author {
+	font-style: italic;
+	color: #555;
+}
+
+.answer {
+	border: 1px solid #7A9FBF;
+	padding: 10px;
+	margin: 5px 5px 5px 10px;
 }
 
 /* end common css */
@@ -49,7 +66,6 @@ form#createQuestion ul {list-style: none;padding: 0;margin: 0;}
 form#createQeustion li {display: block;padding: 5px 0;}
 form#createQuestion legend {display: none;}	
 form#createQuestion div {margin:5px 0;}
-form#createQuestion h2 {margin-left: 10px;}
 form#createQuestion label {display: block;padding-top: 11px;}	
 form#createQuestion label span {color: #666;font-style: italic;}
 form#createQuestion label span.not_needed {float: right;color: #666;font-style: italic;}
@@ -75,8 +91,8 @@ form#createQuestion div.submit {
 }	
 form#createQuestion button {
 	width: 150px;
-	height: 37px;
-	line-height: 37px;		
+	height: 30px;
+	line-height: 30px;		
 	border-width: 1px;
 	background: #A8BF54;
 	color: #fff;
@@ -87,6 +103,65 @@ form#createQuestion button {
 }	
 form#createQuestion button:hover { color: #000; }
 form#createQuestion input:active, form#createQuestion input:focus {
+	border-color: #f00;
+}
+
+/* end question-form */
+
+/* begin answer-form */
+
+form#createAnswer {
+	margin: 0 0 1em 0;
+	padding-top: 10px;
+}
+form#createAnswer fieldset {
+	padding: 0;
+	border: none;	
+	margin-bottom:10px;
+	float: left;
+	display: inline;
+}
+form#createAnswer ul {list-style: none;padding: 0;margin: 0;}
+form#createAnswer li {display: block;padding: 5px 0;}
+form#createAnswer legend {display: none;}	
+form#createAnswer div {margin:5px 0;}
+form#createAnswer label {display: block;padding-top: 11px;}	
+form#createAnswer label.shortLbl {width: 250px;}
+form#createAnswer label span {color: #666;font-style: italic;}
+form#createAnswer label span.not_needed {float: right;color: #666;font-style: italic;}
+form#createAnswer input, form#createAnswer textarea {		
+	border: 1px solid #ddd;
+	background: #fff url(../images/form_input.gif) repeat-x;
+	padding: 3px;
+}
+form#createAnswer input {
+	width: 242px;
+	height: 22px;	
+}
+form#createAnswer textarea {
+	width: 602px;	
+	height: 134px;
+	overflow: auto;
+}					
+form#createAnswer div.submit {
+	margin: 10px 0 10px 2px;
+	clear: both;
+	text-align: left;
+}	
+form#createAnswer button {
+	width: 150px;
+	height: 30px;
+	line-height: 30px;		
+	border-width: 1px;
+	background: #A8BF54;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: center;
+}	
+form#createAnswer button:hover { color: #000; }
+form#createAnswer input:active, form#createAnswer input:focus {
 	border-color: #f00;
 }
 
