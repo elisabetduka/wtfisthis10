@@ -9,7 +9,7 @@ h1, #footer {
 	text-align: center;
 }
 
-h2 {margin-left: 10px;border-bottom: 1px solid #7A9FBF;}
+h2 {margin: 15px 10px;border-bottom: 1px solid #7A9FBF;}
 
 a:hover {
 	color: #7A9FBF;
@@ -65,7 +65,7 @@ form#createQuestion fieldset.grid_5 {width: 400px;margin: 5px 10px 5px 5px;}
 form#createQuestion ul {list-style: none;padding: 0;margin: 0;}
 form#createQeustion li {display: block;padding: 5px 0;}
 form#createQuestion legend {display: none;}	
-form#createQuestion div {margin:5px 0;}
+form#createQuestion div {margin: 5px 0;}
 form#createQuestion label {display: block;padding-top: 11px;}	
 form#createQuestion label span {color: #666;font-style: italic;}
 form#createQuestion label span.not_needed {float: right;color: #666;font-style: italic;}
@@ -82,15 +82,13 @@ form#createQuestion textarea {
 	width: 392px;	
 	height: 134px;
 	overflow: auto;
-}					
+}
 form#createQuestion div.submit {
 	margin: 10px;
-	width: 660px;
-	clear: both;
-	text-align: right;
-}	
+	text-align: left;
+}
 form#createQuestion button {
-	width: 150px;
+	width: 120px;
 	height: 30px;
 	line-height: 30px;		
 	border-width: 1px;
@@ -100,12 +98,19 @@ form#createQuestion button {
 	font-weight: bold;
 	cursor: pointer;
 	text-align: center;
-}	
-form#createQuestion button:hover { color: #000; }
-form#createQuestion input:active, form#createQuestion input:focus {
-	border-color: #f00;
 }
-
+form#createQuestion div.grid_8 {width: 676px;}	
+form#createQuestion p.information, form#createQuestion p.error {
+	padding: 10px;
+	margin: 5px 5px 5px 10px;
+	border: 1px solid #7A9FBF;
+	font-size: 11px;	
+}
+form#createQuestion p.error {border-color: #f00;}
+form#createQuestion p.error span.activeLabel {color: #f00;}
+form#createQuestion button:hover {color: #000;}
+form#createQuestion input:active, form#createQuestion input:focus {border-color: #f00;}
+form#createQuestion span.activeLabel {font-weight: bold;font-size: 12px;}
 /* end question-form */
 
 /* begin answer-form */
@@ -117,15 +122,15 @@ form#createAnswer {
 form#createAnswer fieldset {
 	padding: 0;
 	border: none;	
-	margin-bottom:10px;
+	margin: 0 0 5px 0;
 	float: left;
 	display: inline;
 }
 form#createAnswer ul {list-style: none;padding: 0;margin: 0;}
 form#createAnswer li {display: block;padding: 5px 0;}
 form#createAnswer legend {display: none;}	
-form#createAnswer div {margin:5px 0;}
-form#createAnswer label {display: block;padding-top: 11px;}	
+form#createAnswer div {margin: 5px 0;}
+form#createAnswer label {display: block;}	
 form#createAnswer label.shortLbl {width: 250px;}
 form#createAnswer label span {color: #666;font-style: italic;}
 form#createAnswer label span.not_needed {float: right;color: #666;font-style: italic;}
@@ -139,12 +144,12 @@ form#createAnswer input {
 	height: 22px;	
 }
 form#createAnswer textarea {
-	width: 602px;	
+	width: 612px;	
 	height: 134px;
 	overflow: auto;
 }					
 form#createAnswer div.submit {
-	margin: 10px 0 10px 2px;
+	margin: 10px;
 	clear: both;
 	text-align: left;
 }	
@@ -160,11 +165,20 @@ form#createAnswer button {
 	cursor: pointer;
 	text-align: center;
 }	
+form#createAnswer div.grid_7 {width: 620px; margin: 5px 0;}
+form#createAnswer p.information, form#createAnswer p.error {
+	padding: 10px;
+	margin: 5px 0;
+	border: 1px solid #7A9FBF;
+	font-size: 11px;	
+}
+form#createAnswer p.error {border-color: #f00;}
+form#createAnswer p.error span.activeLabel {color: #f00;}
 form#createAnswer button:hover { color: #000; }
 form#createAnswer input:active, form#createAnswer input:focus {
 	border-color: #f00;
 }
-
+form#createAnswer span.activeLabel {font-weight: bold;font-size: 12px;}
 /* end question-form */
 
 /* begin css tabs */
