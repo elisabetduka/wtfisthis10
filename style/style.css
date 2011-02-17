@@ -99,15 +99,15 @@ form#createQuestion button {
 	cursor: pointer;
 	text-align: center;
 }
-form#createQuestion div.grid_8 {width: 676px;}	
-form#createQuestion p.information, form#createQuestion p.error {
-	padding: 10px;
+form#createQuestion div.grid_8 {width: 639px;}	
+form#createQuestion div#information {
+	padding: 5px 10px;
 	margin: 5px 5px 5px 10px;
 	border: 1px solid #7A9FBF;
 	font-size: 11px;	
 }
-form#createQuestion p.error {border-color: #f00;}
-form#createQuestion p.error span.activeLabel {color: #f00;}
+form#createQuestion div.error {border-color: #f00 !important;}
+form#createQuestion div.error p span.activeLabel {color: #f00;}
 form#createQuestion button:hover {color: #000;}
 form#createQuestion input:active, form#createQuestion input:focus {border-color: #f00;}
 form#createQuestion span.activeLabel {font-weight: bold;font-size: 12px;}
@@ -166,14 +166,14 @@ form#createAnswer button {
 	text-align: center;
 }	
 form#createAnswer div.grid_7 {width: 620px; margin: 5px 0;}
-form#createAnswer p.information, form#createAnswer p.error {
+form#createAnswer div#information {
 	padding: 10px;
 	margin: 5px 0;
 	border: 1px solid #7A9FBF;
 	font-size: 11px;	
 }
-form#createAnswer p.error {border-color: #f00;}
-form#createAnswer p.error span.activeLabel {color: #f00;}
+form#createAnswer div.error {border-color: #f00;}
+form#createAnswer div.error p span.activeLabel {color: #f00;}
 form#createAnswer button:hover { color: #000; }
 form#createAnswer input:active, form#createAnswer input:focus {
 	border-color: #f00;

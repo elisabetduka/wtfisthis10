@@ -25,7 +25,7 @@ validation:
 
 /** Header comment */
 /* Sub comment */
-// Temp comment
+// Temp comment (something to do, remove before launch)
 
 
 
