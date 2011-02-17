@@ -1,0 +1,33 @@
+/pages/ask.html
+/pages/question.html
+/script/jquery-1.5.min.js
+/script/head.load.min.js
+/script/script.js
+/script/countLetters.js
+/script/formValidation.js /**/
+/style/style.css
+
+
+script.js - initialize + global vars
+formValidation.js - validateForm(); /**/
+countLetters.js - countLetters(source, target, max);
+
+
+counter:
+	- target: letterCount
+	- source: messageInput
+
+validation:
+	- nameInput
+	- messageInput
+	- titleInput
+
+
+/** Header comment */
+/* Sub comment */
+// Temp comment
+
+
+
+Intern fil-info:
+/**/ <-- kommande funktionalitet

@@ -1,31 +1,25 @@
-window.onload = function() {
-//	Geting the elements by id
-	var input = document.getElementById("textInput");
-	var count = document.getElementById("cont");
-	function (input, ){
-//	On event on key down do count left	
-	input.onkeydown = (function(target) {
+function countLetters(source, output, maximum) {
+	//	On event on key down do count left	
+	source.onkeydown = (function(target) {
 		return function () {
-		 CountLeft(input,count,340);			
+			CountLeft(source,output,maximum);			
 		};
-	}(input));
-//	On event on key up do count left	
-		input.onkeyup = (function(target) {
+	}(source));
+	//	On event on key up do count left	
+	source.onkeyup = (function(target) {
 		return function () {
-		 CountLeft(input,count,340);			
+			CountLeft(source,output,maximum);			
 		};
-	}(input));
-// 	Function for counting letters in the container
-//	 Param: input, the char container. count, the counting container css selector, the max length of chars in input.		
-	 function CountLeft(input, count, max) {
-	 	 max -= 1;
-		 if(input.value.length > max){
-		 input.value = input.value.substring(0, max);
-		 }else{
-		 var charleft = max - input.value.length;
-		 count.innerHTML = charleft + ' Bokstäver kvar';
-		 }
+	}(source));
+}
+
+// Function for counting letters in the container
+// Param: input, the char container. count, the counting container css selector, the max length of chars in input.		
+function CountLeft(input, count, maxLetters) {
+	if (input.value.length > maxLetters) {
+		input.value = input.value.substring(0, maxLetters - 1);
+	} else {
+		var charleft = maxLetters - input.value.length;
+		count.innerHTML = charleft;
 	}
-
-
-};
+}
