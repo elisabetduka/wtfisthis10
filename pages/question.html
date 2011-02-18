@@ -4,21 +4,25 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>WTF is this</title>
+	<script type="text/javascript" src="../script/head.load.min.js"></script>
+	<script type="text/javascript" >
+		head.js("../script/jquery-1.5.min.js", "../script/script.js");
+	</script>
 	<link rel="stylesheet" href="../style/960gs.css" type="text/css" />
 	<link rel="stylesheet" href="../style/style.css" type="text/css" />
 </head>
 <body>
-	
+
 	<div id="wrapper">
-	
+
 		<div id="header" class="container_12">
 			<div class="grid_9">
 				<h1>WTF is this</h1>
 			</div>
 		</div>
-		
+
 		<div id="content" class="container_12">
-			
+
 			<div class="grid_9" id="main">
 				<ul id="tabnav"> 
 					<li><a href="#">Senaste</a></li> 
@@ -26,7 +30,7 @@
 					<li><a href="#">I din närhet</a></li> 
 					<li class="active"><a href="question.html">En fråga</a></li> 
 					<li><a href="ask.html">Skapa en fråga</a></li> 
-				</ul> 				
+				</ul>
 				<div class="inner">
 					<h2>Vad är det här?</h2>
 					<div class="grid_4"><img src="../images/helix.jpg" alt="helix" /></div>
@@ -36,8 +40,8 @@
 							Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
 						</p>
 						<p class="author">
-							Frågat av Kalle Anka den 27e Oktober 2012 klockan 14.53.							
-						</p>					
+							Frågat av Kalle Anka den 27e Oktober 2012 klockan 14.53.
+						</p>
 					</div>
 				</div>
 				<div class="inner">
@@ -47,69 +51,68 @@
 							Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
 						</p>
 						<p class="author">
-							Besvarat av Kalle Anka den 27e Oktober 2012 klockan 14.53.							
+							Besvarat av Kalle Anka den 27e Oktober 2012 klockan 14.53.
 						</p>
-					</div>			
+					</div>
 					<div class="answer grid_8">
 						<p>
 							Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
 						</p>
 						<p class="author">
-							Besvarat av Kalle Anka den 27e Oktober 2012 klockan 14.53.							
+							Besvarat av Kalle Anka den 27e Oktober 2012 klockan 14.53.
 						</p>
-					</div>	
+					</div>
 					<div class="answer grid_8">
 						<p>
 							Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
 						</p>
 						<p class="author">
-							Besvarat av Kalle Anka den 27e Oktober 2012 klockan 14.53.							
+							Besvarat av Kalle Anka den 27e Oktober 2012 klockan 14.53.
 						</p>
 					</div>
 				</div>
 				<div class="inner">
 					<h2>Ditt svar</h2>
 					<div class="answer grid_8">
-						<form id="createAnswer">
+						<form id="createAnswer" action="question.html" method="post">
 							<fieldset><legend>Ställ ett svar</legend>
 								<ul>
 									<li class="first">
-										<label for="messageInput">Text <span>- <span class="letterCount">340</span> tecken kvar</span></label>
+										<label for="messageInput">Text <span>- <span id="letterCount">340</span> tecken kvar</span></label>
 										<textarea name="messageInput" id="messageInput" cols="50" rows="10"></textarea>
 									</li>
 									<li>
 										<label class="shortLbl" for="nameInput">Namn<span class="not_needed">(frivilligt)</span></label>
 										<input type="text" name="nameInput" id="nameInput" />
 									</li>
-								</ul>	
+								</ul>
 							</fieldset>
 							<div class="grid_7">
 								<p class="information"> <!--// class could be information or error -->
 									<span class="activeLabel">Rubrik:</span> tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies.
 								</p>
 							</div>
-							<div class="submit grid_7"><button type="submit">Spara</button></div>		
+							<div class="submit grid_7"><button type="submit">Spara</button></div>
 						</form>
-					</div>				
-				</div>	
+					</div>
+				</div>
 			</div>
-			
+
 			<div class="grid_3" id="right">
 				<div class="inner">
 					<h3>Om tjänsten</h3>
 					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-				</div>			
+				</div>
 			</div>
-		
+
 		</div>
-		
-		
+
 		<div id="footer" class="container_12">
 			<div class="grid_12">
 				<p>copyright &copy; <a href="mailto:wtf@isthis.net">WTF is this</a> 2011</p>
 			</div>
 		</div>
-	
+
 	</div>
 
 </body>

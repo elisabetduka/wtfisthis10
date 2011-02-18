@@ -15,7 +15,7 @@ function countLetters(source, output, maximum) {
 
 // Function for counting letters in the container
 // Param: input, the char container. count, the counting container css selector, the max length of chars in input.		
-function CountLeft(input, count, maxLetters) {
+function countLeft(input, count, maxLetters) {
 	if (input.value.length > maxLetters) {
 		input.value = input.value.substring(0, maxLetters - 1);
 	} else {
