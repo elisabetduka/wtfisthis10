@@ -2,7 +2,9 @@
 var _dir = "../script/";
 head.js(
 			_dir+"countLetters.js", 
-			_dir+"formValidate.js"
+			_dir+"formValidate.js",
+			_dir+"jquery.apTextCounter.min.js",
+			_dir+"jquery.validate.min.js"
 );
 
 /** Global variables */

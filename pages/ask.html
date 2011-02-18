@@ -44,15 +44,15 @@
 							<fieldset class="grid_3"><legend>Skapa en fråga</legend>
 								<ul>
 									<li class="first">
-										<label for="titleInput">Rubrik<span><span class="letterCount">340</span> tecken kvar</span></label>
-										<input type="text" name="titleInput" id="titleInput" title="Rubrik" />
+										<label for="titleInput">Rubrik<span><span id="titleInputCounter"></span></label>
+										<input type="text" name="titleInput" id="titleInput" class="required" title="Rubrik" />
 									</li>
 									<li>
 										<label for="imageUpload">Bild<span>Format: jpg, jpeg, gif, png</span></label>
 										<input type="file" name="imageUpload" id="imageUpload" title="Bild" />
 									</li>
 									<li>
-										<label for="nameInput">Namn<span><span class="letterCount">340</span> tecken kvar - (frivilligt)</span></label>
+										<label for="nameInput">Namn<span><span id="nameInputCounter"></span></span></label>
 										<input type="text" name="nameInput" id="nameInput" title="Namn" />
 									</li>
 								</ul>	
@@ -60,7 +60,7 @@
 							<fieldset class="textarea grid_5">																			
 								<ul>
 									<li>
-										<label for="messageInput">Text<span><span class="letterCount">340</span> tecken kvar</span></label>
+										<label for="messageInput">Text<span><span id="messageInputCounter"></span></span></label>
 										<textarea name="messageInput" id="messageInput" cols="30" rows="10" title="Text"></textarea>
 									</li>
 								</ul>
