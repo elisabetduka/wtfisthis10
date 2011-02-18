@@ -75,23 +75,25 @@
 					<h2>Ditt svar</h2>
 					<div class="answer grid_8">
 						<form id="createAnswer" action="question.html" method="post">
+							<div class="grid_7" id="information">
+								<!-- // This is the structure for error-msgs. Remove when JS is finished.
+								<p>
+									<span class="activeLabel">Rubrik:</span> <span class="statusMessage">tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies.</span>
+								</p>
+								-->
+							</div>
 							<fieldset><legend>Ställ ett svar</legend>
 								<ul>
 									<li class="first">
-										<label for="messageInput">Text <span>- <span id="letterCount">340</span> tecken kvar</span></label>
+										<label for="messageInput">Text <span><span class="letterCount">340</span> tecken kvar</span></label>
 										<textarea name="messageInput" id="messageInput" cols="50" rows="10"></textarea>
 									</li>
 									<li>
-										<label class="shortLbl" for="nameInput">Namn<span class="not_needed">(frivilligt)</span></label>
+										<label class="shortLbl" for="nameInput">Namn<span><span class="letterCount">340</span> tecken kvar (frivilligt)</span></label>
 										<input type="text" name="nameInput" id="nameInput" />
 									</li>
 								</ul>
 							</fieldset>
-							<div class="grid_7">
-								<p class="information"> <!--// class could be information or error -->
-									<span class="activeLabel">Rubrik:</span> tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies.
-								</p>
-							</div>
 							<div class="submit grid_7"><button type="submit">Spara</button></div>
 						</form>
 					</div>
