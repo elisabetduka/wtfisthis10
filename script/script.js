@@ -1,7 +1,8 @@
 /** Load all external js libraries */
 var _dir = "../script/";
 head.js(
-			_dir+"countLetters.js", 
+			"../jsonSingleObject.js", 
+			_dir+"showQuestion.js", 
 			_dir+"formValidate.js",
 			_dir+"jquery.apTextCounter.min.js",
 			_dir+"jquery.validate.min.js"
@@ -27,7 +28,6 @@ DEFINE['errorLength'] = "Felaktig längd, vänligen försök igen. Godkända vä
 /** Initialize functionality */
 head(function() {
 	// Add all separate function calls here or add one major function from script.js that calls everything else
-	countLetters(document.getElementById("textInput"), document.getElementById("letterCount"), 340);
 	validateForm();
 });
 
