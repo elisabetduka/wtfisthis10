@@ -34,37 +34,39 @@
 				<div class="inner">
 					<h2>Skapa en fråga</h2>						
 					<form id="createQuestion" action="ask.html" method="post">	
+							<div class="grid_8" id="information">
+								<!-- // This is the structure for error-msgs. Remove when JS is finished.
+								<p>
+									<span class="activeLabel">Rubrik:</span> <span class="statusMessage">tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies.</span>
+								</p>
+								-->
+							</div>
 							<fieldset class="grid_3"><legend>Skapa en fråga</legend>
 								<ul>
 									<li class="first">
-										<label for="titleInput">Rubrik</label>
-										<input type="text" name="titleInput" id="titleInput" title="Rubrik" />
+										<label for="titleInput">Rubrik<span><span id="titleInputCounter"></span></label>
+										<input type="text" name="titleInput" id="titleInput" class="required" title="Rubrik" />
 									</li>
 									<li>
-										<label for="imageUpload">Bild</label>
+										<label for="imageUpload">Bild<span>Format: jpg, jpeg, gif, png</span></label>
 										<input type="file" name="imageUpload" id="imageUpload" title="Bild" />
 									</li>
 									<li>
-										<label for="nameInput">Namn<span class="not_needed">(frivilligt)</span></label>
+										<label for="nameInput">Namn<span><span id="nameInputCounter"></span></span></label>
 										<input type="text" name="nameInput" id="nameInput" title="Namn" />
 									</li>
 								</ul>	
 							</fieldset>
 							<fieldset class="textarea grid_5">																			
-								<ul>								
+								<ul>
 									<li>
-										<label for="messageInput">Text <span>- <span id="letterCount">340</span> tecken kvar</span></label>
+										<label for="messageInput">Text<span><span id="messageInputCounter"></span></span></label>
 										<textarea name="messageInput" id="messageInput" cols="30" rows="10" title="Text"></textarea>
 									</li>
 								</ul>
 							</fieldset>	
-							
-							<div class="grid_8" id="information">
-								<p>
-									<span class="activeLabel">Rubrik:</span> <span class="statusMessage">tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies.</span>
-								</p>
-							</div>
-							<div class="submit grid_8"><button type="submit">Spara</button></div>		
+
+							<div class="submit grid_8"><button type="submit">Spara</button></div>
 
 						</form>	
 				</div>			
@@ -81,7 +83,7 @@
 		
 		
 		<div id="footer" class="container_12">
-			<div class="grid_12">
+			<div class="grid_9">
 				<p>copyright &copy; <a href="mailto:wtf@isthis.net">WTF is this</a> 2011</p>
 			</div>
 		</div>

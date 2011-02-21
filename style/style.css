@@ -1,19 +1,12 @@
-/* begin common css */
+/** begin common css */
 
-body {
-	font: 13px arial;
-	background-color: #7A9FBF;
-}
+*:focus {outline: none;} /* To prevent Chrome standard input outline */
 
-h1, #footer {
-	text-align: center;
-}
+body {font: 13px arial;background-color: #7A9FBF;}
 
 h2 {margin: 15px 10px;border-bottom: 1px solid #7A9FBF;}
 
-a:hover {
-	color: #7A9FBF;
-}
+a:hover {color: #7A9FBF;}
 
 #wrapper {
 	margin: auto auto;
@@ -24,70 +17,40 @@ a:hover {
 
 #main {margin: 10px 5px 10px 15px;}
 #right {margin: 10px 15px 10px 5px;}
+#main, #right {background-color: #fff;outline: 1px #A8BF54 solid;}
+#header, #footer {text-align: center;}
 
-#main, #right {
-	background-color: #fff;
-	outline: 1px #A8BF54 solid;	
-}
+.inner {clear: both;padding: 10px;}
+.author {font-style: italic;color: #555;}
+.answer {border: 1px solid #7A9FBF;padding: 10px;margin: 5px 5px 5px 10px;}
 
-.inner {
-	clear: both;
-	padding: 10px;
+div#information {
+	display: none; /* Toggle with JS when displaying error msgs */
+	padding: 5px 10px;
+	margin: 5px 5px 5px 10px !important;
+	border: 1px solid #f00;
+	font-size: 11px;	
 }
+div#information p span.activeLabel {color: #f00;font-weight: bold;font-size: 12px;}
 
-.author {
-	font-style: italic;
-	color: #555;
-}
-
-.answer {
-	border: 1px solid #7A9FBF;
-	padding: 10px;
-	margin: 5px 5px 5px 10px;
-}
+#qImage {max-width: 290px;}
 
 /* end common css */
 
-/* begin question-form */
-
-form#createQuestion {
-	margin: 0 0 1em 0;
-	padding-top: 10px;
-}
-form#createQuestion fieldset {
-	padding: 0;
-	border: none;	
-	float: left;
-	display: inline;
-}
-form#createQuestion fieldset.grid_3 {width: 250px;margin: 5px 5px 5px 10px;}
-form#createQuestion fieldset.grid_5 {width: 400px;margin: 5px 10px 5px 5px;}
-form#createQuestion ul {list-style: none;padding: 0;margin: 0;}
-form#createQeustion li {display: block;padding: 5px 0;}
-form#createQuestion legend {display: none;}	
-form#createQuestion div {margin: 5px 0;}
-form#createQuestion label {display: block;padding-top: 11px;}	
-form#createQuestion label span {color: #666;font-style: italic;}
-form#createQuestion label span.not_needed {float: right;color: #666;font-style: italic;}
-form#createQuestion input, form#createQuestion textarea {		
-	border: 1px solid #ddd;
-	background: #fff url(../images/form_input.gif) repeat-x;
-	padding: 3px;
-}
-form#createQuestion input {
-	width: 242px;
-	height: 22px;	
-}
-form#createQuestion textarea {
-	width: 392px;	
-	height: 134px;
-	overflow: auto;
-}
-form#createQuestion div.submit {
-	margin: 10px;
-	text-align: left;
-}
-form#createQuestion button {
+/** general form css */
+form {margin: 0 0 1em 0;padding-top: 10px;}
+form fieldset {padding: 0;border: none;float: left;display: inline;}
+form ul {list-style: none;padding: 0;margin: 0;}
+form li {display: block;padding: 5px 0;}
+form legend {display: none;}	
+form div {margin: 5px 0;}
+form label {display: block;padding-top: 1px;}	
+form label span {float: right;color: #666;font-style: italic;}
+form label span.letterCount {float:none;}
+form input, form textarea {border: 1px solid #ddd;background: #fff url(../images/form_input.gif) repeat-x;padding: 3px;}
+form textarea:focus, form input:focus {border-color: #7A9FBF;}
+form div.submit {margin: 10px;text-align: left;}
+form button {
 	width: 120px;
 	height: 30px;
 	line-height: 30px;		
@@ -99,90 +62,26 @@ form#createQuestion button {
 	cursor: pointer;
 	text-align: center;
 }
+form button:hover {color: #000;}
+/* end general form css */
+
+/** begin question-form */
+form#createQuestion fieldset.grid_3 {width: 250px;margin: 5px 5px 5px 10px;}
+form#createQuestion fieldset.grid_5 {width: 400px;margin: 5px 10px 5px 5px;}
+form#createQuestion input {width: 242px;height: 22px;}
+form#createQuestion textarea {width: 392px;height: 134px;overflow: auto;}
 form#createQuestion div.grid_8 {width: 639px;}	
-form#createQuestion div#information {
-	padding: 5px 10px;
-	margin: 5px 5px 5px 10px;
-	border: 1px solid #7A9FBF;
-	font-size: 11px;	
-}
-form#createQuestion div.error {border-color: #f00 !important;}
-form#createQuestion div.error p span.activeLabel {color: #f00;}
-form#createQuestion button:hover {color: #000;}
-form#createQuestion input:active, form#createQuestion input:focus {border-color: #f00;}
-form#createQuestion span.activeLabel {font-weight: bold;font-size: 12px;}
 /* end question-form */
 
-/* begin answer-form */
-
-form#createAnswer {
-	margin: 0 0 1em 0;
-	padding-top: 10px;
-}
-form#createAnswer fieldset {
-	padding: 0;
-	border: none;	
-	margin: 0 0 5px 0;
-	float: left;
-	display: inline;
-}
-form#createAnswer ul {list-style: none;padding: 0;margin: 0;}
-form#createAnswer li {display: block;padding: 5px 0;}
-form#createAnswer legend {display: none;}	
-form#createAnswer div {margin: 5px 0;}
-form#createAnswer label {display: block;}	
+/** begin answer-form */
+form#createAnswer fieldset {margin: 0 0 5px 0;}
 form#createAnswer label.shortLbl {width: 250px;}
-form#createAnswer label span {color: #666;font-style: italic;}
-form#createAnswer label span.not_needed {float: right;color: #666;font-style: italic;}
-form#createAnswer input, form#createAnswer textarea {		
-	border: 1px solid #ddd;
-	background: #fff url(../images/form_input.gif) repeat-x;
-	padding: 3px;
-}
-form#createAnswer input {
-	width: 242px;
-	height: 22px;	
-}
-form#createAnswer textarea {
-	width: 612px;	
-	height: 134px;
-	overflow: auto;
-}					
-form#createAnswer div.submit {
-	margin: 10px;
-	clear: both;
-	text-align: left;
-}	
-form#createAnswer button {
-	width: 150px;
-	height: 30px;
-	line-height: 30px;		
-	border-width: 1px;
-	background: #A8BF54;
-	color: #fff;
-	font-size: 16px;
-	font-weight: bold;
-	cursor: pointer;
-	text-align: center;
-}	
-form#createAnswer div.grid_7 {width: 620px; margin: 5px 0;}
-form#createAnswer div#information {
-	padding: 10px;
-	margin: 5px 0;
-	border: 1px solid #7A9FBF;
-	font-size: 11px;	
-}
-form#createAnswer div.error {border-color: #f00;}
-form#createAnswer div.error p span.activeLabel {color: #f00;}
-form#createAnswer button:hover { color: #000; }
-form#createAnswer input:active, form#createAnswer input:focus {
-	border-color: #f00;
-}
-form#createAnswer span.activeLabel {font-weight: bold;font-size: 12px;}
+form#createAnswer input {width: 242px;	height: 22px;}
+form#createAnswer textarea {width: 612px;	height: 134px;	overflow: auto;}
+form#createAnswer div.grid_7 {width: 598px;margin: 5px 0 !important;}
 /* end question-form */
 
-/* begin css tabs */
- 
+/** begin css tabs */
 ul#tabnav {
 	text-align: left;
 	margin: 0 0 1em 0;
@@ -190,15 +89,8 @@ ul#tabnav {
 	list-style-type: none;
 	padding: 3px 10px 3px 10px; 
 }
- 
-ul#tabnav li { 
-	display: inline;
-}
- 
-ul#tabnav li.active { 
-	background-color: #fff;
-}
- 
+ul#tabnav li {display: inline;}
+ul#tabnav li.active {background-color: #fff;}
 ul#tabnav li.active a { 
 	background-color: #fff;
 	color: #000; 
@@ -206,7 +98,6 @@ ul#tabnav li.active a {
 	top: 3px;
 	padding-top: 6px;
 }
-
 ul#tabnav li a {
 	padding: 3px 4px; 
 	border: 1px solid #7A9FBF;
@@ -216,10 +107,5 @@ ul#tabnav li a {
 	text-decoration: none;
 	border-top: none;
 }
- 
-ul#tabnav a:hover {
-	background: #fff;
-	color: #000;
-}
- 
+ul#tabnav a:hover {background: #fff;color: #000;}
 /* end css tabs */

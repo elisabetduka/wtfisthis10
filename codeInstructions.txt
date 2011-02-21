@@ -3,24 +3,18 @@
 /script/jquery-1.5.min.js
 /script/head.load.min.js
 /script/script.js
-/script/countLetters.js
-/script/formValidation.js /**/
+/script/formValidate.js
+/script/jquery.validate.min.js
+/script/jquery.apTextCounter.min.js
+/script/showQuestion.js
 /style/style.css
-
+/style/960gs.css
+/jsonObjects.js
+/jsonSingleObject.js
 
 script.js - initialize + global vars
-formValidation.js - validateForm(); /**/
+formValidate.js - validateForm();
 countLetters.js - countLetters(source, target, max);
-
-
-counter:
-	- target: letterCount
-	- source: messageInput
-
-validation:
-	- nameInput
-	- messageInput
-	- titleInput
 
 
 /** Header comment */
@@ -28,6 +22,26 @@ validation:
 // Temp comment (something to do, remove before launch)
 
 
-
 Intern fil-info:
 /**/ <-- kommande funktionalitet
+
+
+
+Proposed file-structure:
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+
+ask_question.html
+
+show_question.html?id=xxx
+	- if no id-parameter or if unknown id send to 404.html
+
+list_latest.html?page=xxx
+	- list 20 per page
+	- if no page then show first 20
+
+list_popular.html?page=xxx
+	- list 20 per pages
+	- if no page then show first 20
+
+list_closest.html
+	- TODO
