@@ -3,24 +3,18 @@
 /script/jquery-1.5.min.js
 /script/head.load.min.js
 /script/script.js
-/script/countLetters.js
-/script/formValidation.js /**/
+/script/formValidate.js
+/script/jquery.validate.min.js
+/script/jquery.apTextCounter.min.js
+/script/showQuestion.js
 /style/style.css
-
+/style/960gs.css
+/jsonObjects.js
+/jsonSingleObject.js
 
 script.js - initialize + global vars
-formValidation.js - validateForm(); /**/
+formValidate.js - validateForm();
 countLetters.js - countLetters(source, target, max);
-
-
-counter:
-	- target: letterCount
-	- source: messageInput
-
-validation:
-	- nameInput
-	- messageInput
-	- titleInput
 
 
 /** Header comment */
