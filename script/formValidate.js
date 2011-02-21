@@ -46,35 +46,38 @@ function validateForm() {
 		},
 		messages : {
 			titleInput : {
-				required : "Var snäll fyll i rubrik! ",
+				required : "<span class='activeLabel'>Rubrik:</span> Var snäll fyll i rubrik! ",
 				maxlength : "Titeln är för lång! "
 			},
 			nameInput : {
-				required : "Var snäll fyll i namn! ",
+				required : "<span class='activeLabel'>Namn:</span> Var snäll fyll i namn! ",
 				maxlength : "Namnet är för långt! "
 			},
 			textInput : {
-				required : "Var snäll fyll i textfältet! ",
+				required : "<span class='activeLabel'>Text:</span> Var snäll fyll i textfältet! ",
 				maxlength : "Texten är för lång!  "
 			},
 			imageUpload : {
-				required : "Var snäll bifoga en bild! ",
+				required : "<span class='activeLabel'>Bild:</span> Var snäll bifoga en bild! ",
 				accept : "jpg|jpeg|gif|png"
 			}
 		},
 		
 		/*puts errormessages in id=information*/
+		errorElement: "span",
+		errorClass: "statusMessage",
 	   errorLabelContainer: "#information",
 	   wrapper: "p",
+	   
 	   		
 	   /* displays a default errormessage with the number of empty fields*/
 		invalidHandler : function(form, validator, element) {
 			var errors = validator.numberOfInvalids();
 			if (errors) {
-				var message = errors == 1 ? 'Hoppsan! Du missade att fylla i ett obligatoriskt fält!'
-					: 'Hoppsan! Du missade att fylla i '
+				var message = errors == 1 ? '<p>Hoppsan! Du missade att fylla i ett obligatoriskt fält!</p>'
+					: '<p>Hoppsan! Du missade att fylla i '
 					+ errors
-					+ ' obligatoriska fält. ';
+					+ ' obligatoriska fält.</p>';
 				$("#information").html(message);
 				$("#information").show();
 			} else {
