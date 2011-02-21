@@ -32,6 +32,9 @@ div#information {
 	font-size: 11px;	
 }
 div#information p span.activeLabel {color: #f00;font-weight: bold;font-size: 12px;}
+
+#qImage {max-width: 290px;}
+
 /* end common css */
 
 /** general form css */
