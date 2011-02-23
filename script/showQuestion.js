@@ -12,6 +12,7 @@ function showQuestion(qid) {
 			$('#qAuthor').text('Skriven av '+question.author+' den '+ question.post_date);
 		}   
 
+		$("#answers").empty();
 		/* Print all answers */
 		for (var key in question.answers) {
 			var aVal = question.answers[key];
