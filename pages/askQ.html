@@ -1,0 +1,45 @@
+
+				<div class="inner">
+					<h2>Skapa en fråga</h2>						
+					<form id="createQuestion" action="ask.html" method="post">
+						 <div class="grid_8" id="information"></div>
+						 <fieldset class="grid_3">
+							  <legend>
+									Skapa en fråga
+							  </legend>
+							  <ul>
+									<li class="first">
+										 <label for="titleInput">
+											  Rubrik<span id="titleInputCounter"></span>
+										 </label>
+										 <input type="text" name="titleInput" id="titleInput" title="Rubrik" />
+									</li>
+									<li>
+										 <label for="imageUpload">
+											  Bild<span>Format: jpg, jpeg, gif, png</span>
+										 </label>
+										 <input type="file" name="imageUpload" id="imageUpload" title="Bild" />
+									</li>
+									<li>
+										 <label for="nameInput">
+											  Namn<span><span class="letterCount" id="nameInputCounter"></span> (frivilligt)</span>
+										 </label>
+										 <input type="text" name="nameInput" id="nameInput" title="Namn" />
+									</li>
+							  </ul>
+						 </fieldset>
+						 <fieldset class="textarea grid_5">
+							  <ul>
+									<li>
+										 <label for="textInput">
+											  Text<span id="textInputCounter"></span>
+										 </label>
+										 <textarea name="textInput" id="textInput" cols="30" rows="10" title="Text"></textarea>
+									</li>
+							  </ul>
+						 </fieldset>
+						 <div class="submit grid_8">
+							  <button type="submit">Spara</button>
+						 </div>
+					</form>
+				</div>	

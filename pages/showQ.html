@@ -1,0 +1,35 @@
+
+				<div class="inner">
+					<h2 id="qTitle"></h2>
+					<div class="grid_4"><img id="qImage" src="images/form_input.gif" alt="" /></div>
+					<div class="grid_4"><!-- Add map later --></div>
+					<div class="grid_8">
+						<p id="qMessage"></p>
+						<p id="qAuthor" class="author"></p>
+					</div>
+				</div>
+				<div class="inner" id="answers">
+					<h2>Svar</h2>
+				</div>
+				<div class="inner">
+					<h2>Ditt svar</h2>
+					<div class="answer grid_8">
+						<form id="createAnswer" action="#" method="post">
+							<div class="grid_7" id="information"></div>
+							<fieldset><legend>Ställ ett svar</legend>
+								<ul>
+									<li class="first">
+										<label for="textInput">Text <span id="textInputCounter"></span></label>
+										<textarea name="textInput" id="textInput" cols="50" rows="10"></textarea>
+									</li>
+									<li>
+										<label class="shortLbl" for="nameInput">Namn<span><span class="letterCount" id="nameInputCounter"></span> (frivilligt)</span></label>
+										<input type="text" name="nameInput" id="nameInput" />
+									</li>
+								</ul>
+							</fieldset>
+							<div class="submit grid_7"><button type="submit">Spara</button></div>
+						</form>
+					</div>
+				</div>
+
