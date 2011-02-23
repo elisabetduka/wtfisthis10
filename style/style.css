@@ -34,7 +34,8 @@ div#information {
 div#information p span.activeLabel {color: #f00;font-weight: bold;font-size: 12px;}
 
 #qImage {max-width: 290px;}
-
+.view {width: 135px;display: block;}
+.hidden {display:none}
 /* end common css */
 
 /** general form css */
@@ -81,6 +82,13 @@ form#createAnswer textarea {width: 612px;	height: 134px;	overflow: auto;}
 form#createAnswer div.grid_7 {width: 598px;margin: 5px 0 !important;}
 /* end question-form */
 
+/** begin list questions */
+#listQuestions, #listQuestionsByPop {width: 660px;padding:0;}
+#listQuestions li, #listQuestionsByPop li {height: 80px;margin:10px 0;border-bottom: 1px solid #7A9FBF;}
+#listQuestions .grid_5, #listQuestionsByPop .grid_5 {font-size: 16px;height: 80px;line-height: 80px;}
+#listQuestions .grid_2, #listQuestionsByPop .grid_2 {height: 80px;line-height: 80px;}
+/* end list questions */
+
 /** begin css tabs */
 ul#tabnav {
 	text-align: left;
@@ -90,8 +98,8 @@ ul#tabnav {
 	padding: 3px 10px 3px 10px; 
 }
 ul#tabnav li {display: inline;}
-ul#tabnav li.active {background-color: #fff;}
-ul#tabnav li.active a { 
+ul#tabnav li.ui-tabs-selected {background-color: #fff;}
+ul#tabnav li.ui-tabs-selected a { 
 	background-color: #fff;
 	color: #000; 
 	position: relative;
@@ -108,4 +116,8 @@ ul#tabnav li a {
 	border-top: none;
 }
 ul#tabnav a:hover {background: #fff;color: #000;}
+.ui-tabs .ui-tabs-hide {
+    position: absolute;
+    left: -10000px;
+}
 /* end css tabs */

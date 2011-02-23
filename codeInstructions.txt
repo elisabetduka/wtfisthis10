@@ -30,18 +30,18 @@ Intern fil-info:
 Proposed file-structure:
 ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
 
-ask_question.html
+FIND SOME SORT OF CASE-PLUGIN TO MAKE IT EASIER TO GET PAGES FROM PARAMS
 
-show_question.html?id=xxx
-	- if no id-parameter or if unknown id send to 404.html
 
-list_latest.html?page=xxx
-	- list 20 per page
-	- if no page then show first 20
+index.html
+	- incorporates ajax-tabs
 
-list_popular.html?page=xxx
-	- list 20 per pages
-	- if no page then show first 20
 
-list_closest.html
-	- TODO
+Stuff to load:
+
+askQ
+showQ
+listQ?p=pop
+
+mapQ
+
